@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Mensagem ao Telegram</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ENVIAR MENSAGEM AO TELEGRAM</h1>
+        <form id="telegramForm">
+            <div class="input-field">
+                <label for="usernames">Nomes dos Utilizadores (separados por vírgula):</label>
+                <input type="text" id="usernames" name="usernames" required>
+            </div>
+            <div class="input-field">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" maxlength="10000" ></textarea>
+            </div>
+            <div class="selectbox">                     <!-- colocação do select box -->
+                <select name="resposta rápida" id="box">
+                    <option value></option>
+                    <option value="Sim">Sim</option>
+                    <option value="Não">Não</option>
+                    <option value="Ligo mais tarde">Ligo mais tarde</option>
+                    <option value="Envie mensagem">Envie mensagem</option> 
+                    <selectbox id="box" name="box"></selectbox>
+                </select>
+            </div>                                           <!-- Fim da colocação -->
+            <button type="submit">Enviar ✉️</button>
+            <button type="reset" onclick="limparFormulario">Apagar 🗑️</button>  
+        </form>
+        <div class="message" id="responseMessage"></div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

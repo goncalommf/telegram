@@ -105,6 +105,7 @@ document.getElementById('telegramForm').addEventListener('submit', function(even
 
     // Espera todas as mensagens serem enviadas
     Promise.all(sendPromises).then(() => {
+        document.getElementById('telegramForm').reset();
         console.log('Todas as mensagens foram processadas.');
     });
 });

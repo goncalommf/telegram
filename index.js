@@ -1,7 +1,7 @@
 const userChatIdMap = {
-    'testebot': '7318704100',
+    'messagebot': '7318704100',
     'grupo': '-4133469671',
-    'teste2': '#-2232989686',
+    'grupo2': '-4287179667',
     // Adicione mais mapeamentos conforme necessário
 };
 
